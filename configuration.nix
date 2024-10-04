@@ -39,11 +39,17 @@
 			git
 		];
 	};
-	#ENV
-	environment = {
-		systemPackages = with pkgs; [ #Общесистемные пакеты
-			btop 
-		];
+	#USERS
+	users = {
+		users = {
+			qqshkaevth = {
+				isNormalUser = true;
+				extraGroups = ["wheel" "networkmanager"];
+				packages = with pkgs; [ #Пакеты для конкретного пользователя
+					firefox
+				];
+			};
+		};
 	};
 	#SECURTITY
 	security = {
