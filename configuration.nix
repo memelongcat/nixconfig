@@ -74,4 +74,5 @@
 			defaultSession = "xfce";
 		};
     	};
+	system.StateVersion = "24.05";
 }
