@@ -41,6 +41,7 @@
 			unstable.byedpi
 			telegram-desktop
 			heroic
+			leafpad
 		];
 	};
 	#USERS
