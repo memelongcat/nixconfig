@@ -37,6 +37,7 @@
 			git
 			xorg.libxcvt
 			pciutils
+			discord
 
 		];
 	};
@@ -79,6 +80,12 @@
 	hardware = {
 		pulseaudio = {
 			enable = true;
+		};
+	};
+	#NIXPKGS
+	nixpkgs = {
+		config = {
+			allowUnfree = true;
 		};
 	};
 
