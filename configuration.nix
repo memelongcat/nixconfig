@@ -41,7 +41,7 @@
 			discord
 			unstable.byedpi
 			telegram-desktop
-			heroic
+			#heroic
 			leafpad
 			wineWowPackages.stable
 			winetricks
@@ -80,6 +80,9 @@
         	};
 		displayManager = {
 			defaultSession = "xfce";
+		};
+		flatpak = {
+			enable = true;
 		};
     	};
 	#HARDWARE
