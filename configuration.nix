@@ -36,6 +36,8 @@
 			neovim
 			git
 			xorg.libxcvt
+			pciutils
+
 		];
 	};
 	#USERS
@@ -73,5 +75,12 @@
 			defaultSession = "xfce";
 		};
     	};
+	#HARDWARE
+	hardware = {
+		pulseaudio = {
+			enable = true;
+		};
+	};
+
 	system.stateVersion = "24.05";
 }
