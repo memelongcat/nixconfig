@@ -2,7 +2,7 @@
   disko.devices = {
     disk = {
       my-disk = {
-        device = "/dev/sdb"; #целевой диск для установки
+        device = "/dev/sda"; #целевой диск для установки
         type = "disk";
         content = {
           type = "gpt";

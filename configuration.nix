@@ -39,7 +39,7 @@
 			pciutils
 			discord
 			unstable.byedpi
-
+			telegram-desktop
 		];
 	};
 	#USERS
