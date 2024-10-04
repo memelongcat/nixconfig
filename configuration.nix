@@ -35,6 +35,7 @@
 		systemPackages = with pkgs; [ #Общесистемные пакеты
 			neovim
 			git
+			xorg.libxcvt
 		];
 	};
 	#USERS
