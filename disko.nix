@@ -18,7 +18,7 @@
             };
             swap = { #[swap]
 	            size = "8G";
-	            contetnt = {
+	            content = {
 		            type = "swap";
 		            resumeDevice = true; #resume for hibernation
 	            };
