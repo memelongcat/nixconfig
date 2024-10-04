@@ -43,8 +43,8 @@
 			telegram-desktop
 			#heroic
 			leafpad
-			wineWowPackages.stable
-			winetricks
+			#wineWowPackages.stable
+			#winetricks
 		];
 	};
 	#USERS
@@ -85,6 +85,13 @@
 			enable = true;
 		};
     	};
+	systemd.services.flatpak-repo = {
+    		wantedBy = [ "multi-user.target" ];
+    		path = [ pkgs.flatpak ];
+    		script = ''
+      			flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    		'';
+  	};
 	#HARDWARE
 	hardware = {
 		pulseaudio = {
