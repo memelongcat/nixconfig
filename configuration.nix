@@ -40,6 +40,7 @@
 			discord
 			unstable.byedpi
 			telegram-desktop
+			heroic
 		];
 	};
 	#USERS
