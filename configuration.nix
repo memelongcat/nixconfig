@@ -41,10 +41,10 @@
 			discord
 			unstable.byedpi
 			telegram-desktop
-			#heroic
+			heroic
 			leafpad
-			#wineWowPackages.stable
-			#winetricks
+			wineWowPackages.stable
+			winetricks
 		];
 	};
 	#USERS
@@ -73,6 +73,17 @@
 	services = {
 		xserver = {
             		enable = true;
+			monitorSection = ''
+				Modeline "1280x1024_75.00" 138.75  1280 1368 1504 1728  1024 1027 1034 1072 -hsync +vsync
+			'';
+			deviceSection = ''
+				Option "ModeValidation" "AllowNonEdidModes"
+			'';
+			screenSection = ''
+      				SubSection "Display"
+        				Modes "1280x1024_75.00"
+     				EndSubSection
+    			'';
 			desktopManager = {
 				xterm.enable = false;
 				xfce.enable = true;
@@ -81,17 +92,7 @@
 		displayManager = {
 			defaultSession = "xfce";
 		};
-		flatpak = {
-			enable = true;
-		};
     	};
-	systemd.services.flatpak-repo = {
-    		wantedBy = [ "multi-user.target" ];
-    		path = [ pkgs.flatpak ];
-    		script = ''
-      			flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    		'';
-  	};
 	#HARDWARE
 	hardware = {
 		pulseaudio = {
