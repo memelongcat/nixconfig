@@ -45,6 +45,7 @@
 			leafpad
 			wineWowPackages.stable
 			winetricks
+			r2modman
 		];
 	};
 	#USERS
@@ -122,9 +123,9 @@
   			dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
   			localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
 		};
-		appimage = {
-			enable = true;
-			binfmt = true;
+		# appimage = {
+		#	enable = true;
+		#	binfmt = true;
 		};
 	};
 
