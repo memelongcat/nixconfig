@@ -126,7 +126,7 @@
 		# appimage = {
 		#	enable = true;
 		#	binfmt = true;
-		};
+		#};
 	};
 
 	system.stateVersion = "24.05";
