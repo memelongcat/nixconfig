@@ -46,6 +46,7 @@
 			wineWowPackages.stable
 			winetricks
 			r2modman
+			unzip
 		];
 	};
 	#USERS
