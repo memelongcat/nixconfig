@@ -47,6 +47,7 @@
 			winetricks
 			r2modman
 			unzip
+			skypeforlinux
 		];
 	};
 	#USERS
