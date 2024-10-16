@@ -71,6 +71,7 @@
 				Defaults targetpw #Запрос пароля root
 			'';
 		};
+		pam.services.xfce.enableGnomeKeyring = true;
 	};
 	#SERVICES
 	services = {
@@ -94,7 +95,10 @@
         	};
 		displayManager = {
 			defaultSession = "xfce";
-		};	#BOOT
+		};
+		gnome = {
+			gnome-keyring.enable = true;
+		};
 
     	};
 	#HARDWARE
