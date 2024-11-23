@@ -48,6 +48,8 @@
 			r2modman
 			unzip
 			skypeforlinux
+			p7zip
+			unrar
 		];
 	};
 	#USERS
