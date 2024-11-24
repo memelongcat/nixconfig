@@ -50,6 +50,8 @@
 			skypeforlinux
 			p7zip
 			unrar
+			amneziawg-go
+			amneziawg-tools
 		];
 	};
 	#USERS
